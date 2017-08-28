@@ -10,6 +10,19 @@
     <groupId>io.dropwizard</groupId>
     <name>Dropwizard Example Application</name>
 
+    <distributionManagement>
+        <repository>
+            <id>central</id>
+            <name>cidasdpdasartip.cr.usgs.gov-releases</name>
+            <url>https://cida.usgs.gov/artifactory/mlr-maven</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>cidasdpdasartip.cr.usgs.gov-snapshots</name>
+            <url>https://cida.usgs.gov/artifactory/mlr-maven</url>
+        </snapshotRepository>
+    </distributionManagement>
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -25,13 +38,6 @@
         <maven.site.deploy.skip>true</maven.site.deploy.skip>
     </properties>
 
-    <repositories>
-        <repository>
-            <id>sonatype-nexus-snapshots</id>
-            <name>Sonatype Nexus Snapshots</name>
-            <url>http://oss.sonatype.org/content/repositories/snapshots</url>
-        </repository>
-    </repositories>
 
     <dependencyManagement>
         <dependencies>
